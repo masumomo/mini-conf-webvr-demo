@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@4ffc4deae9f36e3a45d90f46d23e884ec9a0db77/dist/aframe-master.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@2.0.0/dist/aframe-environment-component.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.1.3/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.0/dist/aframe-physics-system.min.js"></script>
@@ -332,120 +333,4 @@
       </a-entity>
     </a-scene>
   </body>
-  <script>
-    const something = document.body.querySelector("#something");
-    const devicemotionX = document.body.querySelector("#devicemotionX");
-    const devicemotionY = document.body.querySelector("#devicemotionY");
-    const devicemotionZ = document.body.querySelector("#devicemotionZ");
-    // const deviceorientation = document.body.querySelector("#deviceorientation");
-    const camera = document.getElementById("camera");
-    const elements = document.querySelector("#my-image01-id");
-    var scene = document.querySelector("a-scene");
-
-    if (scene.hasLoaded) {
-      run();
-    } else {
-      scene.addEventListener("loaded", run);
-    }
-
-    function run() {
-      console.log("hello :");
-      // anime({
-      //   targets: elements,
-      //   left: "240px",
-      //   backgroundColor: "#FFF",
-      //   borderRadius: ["0%", "50%"],
-      //   easing: "easeInOutQuad"
-      // });
-    }
-
-    const speed = 0.001;
-    const handleOrientation = event => {
-      console.log("START :", handleOrientation);
-      // deviceorientation.setAttribute(
-      //   "value",
-      //   `START deviceorientation ${event.alpha} / ${event.beta} / ${event.gamma}`
-      // );
-    };
-
-    const handleMotion = event => {
-      console.log("START :", handleMotion);
-
-      // something.setAttribute("value", "SET UP! handleMotion");
-      // devicemotionX.setAttribute("value", "SET UP! handleMotion");
-
-      if (camera) {
-        let position = camera.getAttribute("position");
-        let rotation = camera.getAttribute("rotation");
-        // devicemotion.setAttribute(
-        //   "value",
-        `START position.x ${Math.cos(((rotation.y - 90) * Math.PI) / 180) *
-          speed} ` //   "value", // devicemotion2.setAttribute( // );
-        `START position.y ${MMath.sin(((rotation.y - 90) * Math.PI) / 180) *
-          speed} `;
-        // );
-        // position.x += event.acceleration.x;
-        // position.z += event.acceleration.y;
-
-        const x = Math.floor(event.acceleration.x * 10);
-        const y = Math.floor(event.acceleration.y * 10);
-        const z = Math.floor(event.acceleration.z * 10);
-        devicemotionX.setAttribute("value", `START X ${x} `);
-        devicemotionY.setAttribute("value", `START Y ${y} `);
-        devicemotionZ.setAttribute("value", `START Z ${z}`);
-        camera.setAttribute("position", position);
-      }
-    };
-
-    // setInterval(() => {
-    const position = camera.getAttribute("position");
-    const rotation = camera.getAttribute("rotation");
-    // console.log("rotation :", rotation);
-    position.x += -Math.cos(((rotation.y - 90) * Math.PI) / 180) * speed;
-    position.z += Math.sin(((rotation.y - 90) * Math.PI) / 180) * speed;
-    camera.setAttribute("position", position);
-    // devicemotionX.setAttribute("position", position);
-    // devicemotionY.setAttribute("position", position);
-    // devicemotionZ.setAttribute("position", position);
-    // console.log("position :", position);
-    // console.log("camera :", camera);
-    // }, 50);
-    let moving = false;
-    // window.addEventListener(
-    //   "touchstart",
-    //   function() {
-    // setInterval(() => {
-    // if (moving) return;
-    // moving = true;d
-    // const position = camera.getAttribute("position");
-    // const rotation = camera.getAttribute("rotation");
-    // console.log("rotation :", rotation);
-    position.x += -Math.cos(((rotation.y - 90) * Math.PI) / 180) * speed;
-    position.z += Math.sin(((rotation.y - 90) * Math.PI) / 180) * speed;
-    camera.setAttribute("position", position);
-    // }, 50);
-    // },
-    // false
-    // );
-    //
-    // window.addEventListener(
-    // "touchend",
-    // function() {
-    //   moving = false;
-    // },
-    // false
-    // );
-    // window.addEventListener("deviceorientation", handleOrientation, true);
-    // window.addEventListener("devicemotion", handleMotion, true);
-    //とりあえずオブジェクトを作って移動は諦める　ジャンプは可能（リンク）
-    //ワンダーランド的な
-
-    //移動できるようにする。
-    devicemotionX.setAttribute("value", `START X  `);
-    devicemotionY.setAttribute("value", `START Y  `);
-    devicemotionZ.setAttribute("value", `START Z `);
-    console.log("START1 :", devicemotionX);
-    console.log("START2 :", devicemotionY);
-    console.log("START3 :", devicemotionZ);
-  </script>
 </html>
