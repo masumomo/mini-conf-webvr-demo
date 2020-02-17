@@ -7,7 +7,7 @@
   <body>
     <a-scene>
       <a-entity position="0 0.7 4">
-        <a-camera look-controls="true"></a-camera>
+        <a-camera></a-camera>
       </a-entity>
       <a-entity
         environment="
@@ -261,25 +261,25 @@
             position="0 0.43 0"
             depth="0.1"
             color="#8D4126"
-          >
-          </a-cylinder>
-          <a-cylinder
+            geometry="segmentsRadial: 0;"
+          ></a-cylinder
+          ><a-cylinder
             rotation="0 0 90"
             position="0 -0.5 0"
             radius="0.1"
             height="1"
             depth="0.1"
             color="#8D4126"
-          >
-          </a-cylinder>
+            geometry="segmentsRadial: 0;"
+          ></a-cylinder>
           <a-box
             position="0 -0.04 0"
             height="0.8"
             width="1"
             depth="0.05"
             color="#8D4126"
-          >
-            <a-text
+            map="bricks"
+            ><a-text
               position="-0.46 0 0.05"
               id="hello-world"
               rotation="2 0 0"
@@ -287,24 +287,25 @@
               font="aileronsemibold"
               width="4"
               color="#ffffff"
-            ></a-text>
-          </a-box>
+            ></a-text
+          ></a-box>
           <a-cylinder
             position="-0.6 -0.34 0"
             radius="0.1"
             height="1.7"
             depth="0.1"
             color="#8D4126"
-          >
-          </a-cylinder>
+            geometry="segmentsRadial: 0;"
+          ></a-cylinder>
           <a-cylinder
             position="0.6 -0.34 0"
             radius="0.1"
             height="1.7"
             depth="0.1"
             color="#8D4126"
-          >
-          </a-cylinder>
+            map="bricks"
+            geometry="segmentsRadial: 0;"
+          ></a-cylinder>
         </a-entity>
       </a-entity>
     </a-scene>
