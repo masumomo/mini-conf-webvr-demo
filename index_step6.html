@@ -18,7 +18,16 @@
         position="0 0.7 4"
       ></a-entity> -->
       <a-entity movement-controls position="0 0.7 4" rotation="0.5 0 0">
-        <a-camera look-controls></a-camera>
+        <!-- <a-camera look-controls></a-camera> -->
+        <a-entity
+          id="camera"
+          camera
+          look-controls
+          raycaster="objects: .collidable; far: 0.5;"
+          collider-check
+          rotation="0 0 0"
+          position="0 0.3 0"
+        ></a-entity>
       </a-entity>
       <!-- <a-entity position="0 0.7 4">
         <a-entity
