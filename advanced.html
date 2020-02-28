@@ -1,0 +1,1179 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@2.0.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.1.3/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <title>Advenced</title>
+  <body>
+    <a-scene>
+      <a-camera position="0 15.7 1.4" look-controls>
+        <a-entity
+          cursor="fuse: true; fuseTimeout: 500"
+          position="0 0 -1"
+          geometry="primitive: ring; radiusInner: 0.002; radiusOuter: 0.003"
+          material="color: black; shader: flat"
+        >
+        </a-entity
+      ></a-camera>
+      <a-entity
+        environment="
+        preset: forest;
+        grid: none;
+        ground: hills;
+        groundTexture: walkernoise;
+        groundColor:#ffffff;
+        groundColor2:#d3dcee; 
+        dressing:none;"
+      ></a-entity>
+      <a-entity
+        particle-system="preset: dust; particleCount: 1000; size: 4"
+      ></a-entity>
+      <a-entity class="whole-scene" position="0 15.8 -6">
+        <!-- <a-entity class="whole-scene"> -->
+
+        <!-- cloud -->
+        <a-entity class="cloud" position="-3.5 2 1.5" rotation="90 90 0">
+        </a-cone>
+        <a-cone
+          color="#ffffff"
+          height="0.9"
+          segments-height="0"
+          segments-radial="15"
+          radius-bottom="0.5"
+          radius-top="0.001"
+          position="0 -0.3 0"
+          scale="0.5 0.5 0.5"
+          material=""
+          geometry="primitive:icosahedron"
+        ></a-cone
+        ><a-cone
+          color="#ffffff"
+          height="1"
+          segments-height="0"
+          segments-radial="15"
+          radius-bottom="0.6"
+          radius-top="0.001"
+          position="0.04494 -0.79771 0"
+          roughness="1"
+          scale="0.6 0.6 0.6"
+          material=""
+          geometry="primitive:dodecahedron"
+        ></a-cone>
+        </a-entity>
+        <a-entity class="cloud" position="-2 3 1" rotation="90 90 0">
+        </a-cone>
+        <a-cone
+          color="#ffffff"
+          height="0.9"
+          segments-height="0"
+          segments-radial="15"
+          radius-bottom="0.5"
+          radius-top="0.001"
+          position="0 -0.3 0"
+          scale="0.5 0.5 0.5"
+          material=""
+          geometry="primitive:icosahedron"
+        ></a-cone
+        ><a-cone
+          color="#ffffff"
+          height="1"
+          segments-height="0"
+          segments-radial="15"
+          radius-bottom="0.6"
+          radius-top="0.001"
+          position="0.04494 -0.79771 0"
+          roughness="1"
+          scale="0.6 0.6 0.6"
+          material=""
+          geometry="primitive:dodecahedron"
+        ></a-cone>
+        </a-entity>
+        <a-entity class="cloud" position="-0.1 3 0.4" rotation="90 90 0">
+          </a-cone>
+          <a-cone
+            color="#ffffff"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#ffffff"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+        </a-entity>
+        <a-entity class="cloud" position="0.4 3.5 1.3" rotation="90 90 0">
+        </a-cone>
+        <a-cone
+          color="#ffffff"
+          height="0.9"
+          segments-height="0"
+          segments-radial="15"
+          radius-bottom="0.5"
+          radius-top="0.001"
+          position="0 -0.3 0"
+          scale="0.55 0.55 0.55"
+          material=""
+          geometry="primitive:icosahedron"
+        ></a-cone
+        ><a-cone
+          color="#ffffff"
+          height="1"
+          segments-height="0"
+          segments-radial="15"
+          radius-bottom="0.6"
+          radius-top="0.001"
+          position="0.04494 -0.79771 0"
+          roughness="1"
+          scale="0.6 0.6 0.6"
+          material=""
+          geometry="primitive:dodecahedron"
+        ></a-cone>
+        </a-entity>
+        <a-entity class="cloud" position="1.4 2.5 1.3" rotation="90 90 0">
+        </a-cone>
+        <a-cone
+          color="#ffffff"
+          height="0.9"
+          segments-height="0"
+          segments-radial="15"
+          radius-bottom="0.5"
+          radius-top="0.001"
+          position="0 -0.3 0"
+          scale="0.55 0.55 0.55"
+          material=""
+          geometry="primitive:icosahedron"
+        ></a-cone
+        ><a-cone
+          color="#ffffff"
+          height="1"
+          segments-height="0"
+          segments-radial="15"
+          radius-bottom="0.6"
+          radius-top="0.001"
+          position="0.04494 -0.79771 0"
+          roughness="1"
+          scale="0.6 0.6 0.6"
+          material=""
+          geometry="primitive:dodecahedron"
+        ></a-cone>
+        </a-entity>
+
+
+
+        <a-entity class="ground" position="1.19291 -0.48643 0.07263">
+          <a-icosahedron
+            color="#dfe1e1"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-4.26371 -1.53368 0.8987"
+            material=""
+            scale="6 6 7"
+            geometry=""
+          ></a-icosahedron>
+          <a-icosahedron
+            color="#dfe1e1"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-3.63246 -1.74167 2.36217"
+            material=""
+            scale="3 3 4"
+            geometry=""
+          ></a-icosahedron
+          ><a-icosahedron
+            color="#dfe1e1"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-3.77133 -1.74169 3.03381"
+            material=""
+            scale="1 2 1"
+            geometry=""
+          ></a-icosahedron>
+          <a-cylinder
+            src="./assets/ground-texture.jpg"
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-3.76523 -1.74512 0.8987"
+            material=""
+            geometry="primitive:icosahedron"
+            scale="13 6 18"
+          ></a-cylinder>
+          <a-cylinder
+            src="./assets/ground-texture.jpg"
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-1.95501 -1.63408 -2.52453"
+            material=""
+            geometry="primitive:icosahedron"
+            scale="30 10 33"
+          ></a-cylinder>
+          <a-cylinder
+            material="src: ./assets/ground-texture.jpg; color: #8D4126; roughness: 0.1; metalness: 0"
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry="primitive:dodecahedron"
+            scale="20 5 20"
+          ></a-cylinder>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-2.17688 -1.98388 2.62402"
+            material=""
+            geometry="primitive:dodecahedron"
+            scale="21 2.5 20"
+          ></a-cylinder>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-1.53387 -2.22543 -0.84123"
+            material=""
+            geometry="primitive:icosahedron"
+            scale="30 10 33"
+          ></a-cylinder>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-0.38095 -1.94677 -0.04446"
+            material=""
+            geometry="primitive:dodecahedron"
+            scale="30 5 33"
+          ></a-cylinder>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-3.99894 -2.16332 -1.9359"
+            material=""
+            geometry="primitive:dodecahedron"
+            scale="10 19 32"
+          ></a-cylinder
+          ><a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0.84091 -3.09131 0.09557"
+            material=""
+            geometry="primitive:dodecahedron"
+            scale="10 20 32.01"
+          ></a-cylinder
+          ><a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-0.78003 -3.9013 0.09557"
+            material=""
+            geometry="primitive:icosahedron"
+            scale="21 27 20"
+          ></a-cylinder
+          ><a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-1.5002 -3.2614 0.82095"
+            material=""
+            geometry="primitive:icosahedron"
+            scale="21 27 20"
+          ></a-cylinder
+          ><a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="-3.24091 -2.95028 -0.17211"
+            material=""
+            geometry="primitive:dodecahedron"
+            scale="10 21 32"
+          ></a-cylinder>
+          <!-- Trees -->
+        </a-entity>
+        <a-entity
+          class="small-tree"
+          position="-3.01967 0.78606 0"
+          rotation="2 3.0000000000000004 4"
+          scale="1.4 1.3 1.3"
+        >
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:dodecahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.003"
+            scale="0.5 0.6 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder> </a-entity
+        ><a-entity
+          class="small-tree"
+          position="2.05862 0.49939 0.85069"
+          rotation="2 3.0000000000000004 355"
+          scale="1.4 1.3 1.3"
+        >
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.003"
+            scale="0.5 0.6 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity class="small-tree" position="-0.90073 0.01399 0">
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity
+          class="small-tree"
+          position="-2.47516 0.01399 -2.18917"
+          scale="1.2 1.4 1.1"
+        >
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity
+          class="small-tree"
+          position="-2.86502 -0.65766 2.13543"
+          rotation="0 12.000000000000002 4"
+          scale="0.7 0.8 1.1"
+        >
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder> </a-entity
+        ><a-entity
+          class="small-tree"
+          position="-2.40501 0.01399 -0.78668"
+          rotation="0 4 1"
+        >
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity
+          class="small-tree"
+          position="2.31811 0.01399 -1.94848"
+          scale="1.2 1.2 1.2"
+        >
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity class="small-tree" position="1.22467 -0.00018 0">
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity class="small-tree" position="1.22467 -0.00018 0">
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity class="small-tree" position="1.22467 -0.00018 0">
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity class="small-tree" position="1.22467 -0.00018 0">
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity class="small-tree" position="1.22467 -0.00018 0">
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+        <a-entity class="small-tree" position="1.22467 -0.00018 0">
+          <a-cone
+            color="#416132"
+            height="0.8"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.4"
+            radius-top="0.001"
+            scale="0.5 0.5 0.5"
+            material=""
+            geometry="primitive:icosahedron"
+          >
+          </a-cone>
+          <a-cone
+            color="#416132"
+            height="0.9"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.5"
+            radius-top="0.001"
+            position="0 -0.3 0"
+            scale="0.55 0.55 0.55"
+            material=""
+            geometry="primitive:icosahedron"
+          ></a-cone
+          ><a-cone
+            color="#416132"
+            height="1"
+            segments-height="0"
+            segments-radial="15"
+            radius-bottom="0.6"
+            radius-top="0.001"
+            position="0.04494 -0.79771 0"
+            roughness="1"
+            scale="0.6 0.6 0.6"
+            material=""
+            geometry="primitive:dodecahedron"
+          ></a-cone>
+          <a-cylinder
+            color="#8D4126"
+            height="0.6"
+            radius="0.1"
+            segments-height="0"
+            segments-radial="0"
+            position="0 -1.5 0"
+            material=""
+            geometry=""
+          ></a-cylinder>
+        </a-entity>
+
+        <!-- Signboard -->
+        <a-entity
+          class="signboard"
+          position="-2 -0.7 0.7"
+          rotation="0 29.999999999999996 10"
+        >
+          <a-cylinder
+            rotation="0 0 90"
+            radius="0.1"
+            height="1"
+            position="0 0.43 0"
+            depth="0.1"
+            color="#8D4126"
+            geometry="segmentsRadial:0"
+            material=""
+          ></a-cylinder
+          ><a-cylinder
+            rotation="0 0 90"
+            position="0 -0.5 0"
+            radius="0.1"
+            height="1"
+            depth="0.1"
+            color="#8D4126"
+            geometry="segmentsRadial:0"
+            material=""
+          ></a-cylinder>
+          <a-box
+            position="0 -0.04 0"
+            height="0.8"
+            width="1"
+            depth="0.05"
+            color="#8D4126"
+            map="bricks"
+            material=""
+            geometry=""
+            ><a-text
+              position="-0.46 0 0.05"
+              id="hello-world"
+              rotation="2 0 0"
+              value="Hello World"
+              font="aileronsemibold"
+              width="4"
+              color="#ffffff"
+              text=""
+            ></a-text
+          ></a-box>
+          <a-cylinder
+            position="-0.6 -0.34 0"
+            radius="0.1"
+            height="1.7"
+            depth="0.1"
+            color="#8D4126"
+            geometry="segmentsRadial:0"
+            material=""
+          ></a-cylinder>
+          <a-cylinder
+            position="0.6 -0.34 0"
+            radius="0.1"
+            height="1.7"
+            depth="0.1"
+            color="#8D4126"
+            map="bricks"
+            geometry="segmentsRadial:0"
+            material=""
+          ></a-cylinder>
+        </a-entity>
+      </a-entity>
+    </a-scene>
+    <script>
+      let standing = true;
+      const signboard = document.body.querySelector(".signboard");
+      signboard.addEventListener("click", () => {
+        if (standing) {
+          anime({
+            targets: signboard,
+            rotation: "0 390 10"
+          });
+          anime({
+            targets: signboard.querySelector("a-text"),
+            value: "Thank you \nfor listening!!"
+          });
+          standing = false;
+        }
+      });
+      const smallTrees = Array.from(
+        document.body.querySelectorAll(".small-tree")
+      );
+
+
+      const leefs = Array.from(
+        document.body.querySelectorAll(".small-tree a-cone")
+      );
+      const clouds = Array.from(
+        document.body.querySelectorAll(".cloud")
+      );
+
+      console.log(leefs);
+      setTimeout(() => {
+        clouds.map(cloud => {
+          const from = cloud.getAttribute("position");
+          const randX = from.x + 2;
+          const randY = from.y ;
+          const randZ = from.z ;
+          anime({
+            targets: cloud,
+            position: [`${from.x-1.5} ${from.y} ${from.z}`,`${randX} ${randY} ${randZ}`],
+            duration: 50000
+          }); 
+        });
+        smallTrees.map(smallTree => {
+      const from = smallTree.getAttribute("scale");
+          const randX = from.x + Math.random() / 15;
+          const randY = from.y + Math.random() / 15;
+          const randZ = from.z + Math.random() / 15;
+          anime({
+            targets: smallTree,
+            scale: [`0 0 0`,`${randX} ${randY} ${randZ}`],
+            duration: 1000
+          });
+        });
+      }, 200);
+      setTimeout(()=>{
+        leefs.map(leef => {
+              let from = leef.getAttribute("scale");
+              console.log('from :', from);
+              let randX = from.x;
+              let randY = from.y;
+              let randZ = from.z;
+              randX = anime.random(from.x-from.x*0.01, from.x+from.x*0.01);
+              randY = anime.random(from.y-from.y*0.01, from.y+from.y*0.01);
+              randZ = anime.random(from.z-from.z*0.01, from.z+from.z*0.01);
+          anime({
+            targets: leef,
+            easing: 'easeInOutQuad',
+            // scale: [`${from.x} ${from.y} ${from.z}`,`${randX} ${randY} ${randZ}`],
+            loop: true,
+            duration: 1000,
+            loopComplete: function(anim) {
+              from = leef.getAttribute("scale");
+              randX = anime.random(from.x-from.x*0.01, from.x+from.x*0.01);
+              randY = anime.random(from.y-from.y*0.01, from.y+from.y*0.01);
+              randZ = anime.random(from.z-from.z*0.01, from.z+from.z*0.01);
+              console.log('from :', from);
+              console.log('randX :', randX);
+              console.log('randY :', randY);
+              console.log('randZ :', randZ);
+            }
+          });
+        });
+      }, 300);
+    </script>
+  </body>
+</html>

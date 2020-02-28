@@ -1,21 +1,11 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@2.0.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <title>Step3</title>
   <body>
     <a-scene>
-      <a-entity
-        environment="
-        preset: forest;
-        grid: none;
-        ground: hills;
-        groundTexture: walkernoise;
-        groundColor:#ffffff;
-        groundColor2:#f5feff; 
-        dressing:none;"
-      ></a-entity>
+      <a-camera position="0 0.7 4"></a-camera>
       <!-- Trees -->
       <a-entity class="small-tree">
         <a-cone
