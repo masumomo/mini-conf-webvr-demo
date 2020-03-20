@@ -170,3 +170,12 @@ src="https://unpkg.com/aframe-particle-system-component@1.1.3/dist/aframe-partic
 </body>
 </html>
 ```
+
+## More advanced options
+
+- Use 3D model that you or someone created!
+- Use images, texture!
+- Add animation!
+  This [advanced demo](https://masumomo.github.io/mini-conf-webvr-demo/advanced.html). is using anime.js. It's so fun! Please try it out!
+
+  ...and so on.
